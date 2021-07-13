@@ -7,7 +7,7 @@ export default class Urls extends BaseSchema {
     this.schema.createTable(this.tableName, (table) => {
       table.increments('id')
       table.string('url').notNullable()
-      table.string('slug').notNullable()
+      table.string('slug').notNullable().unique()
     })
   }
 

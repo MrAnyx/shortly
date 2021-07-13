@@ -6,7 +6,7 @@ export default class CreateShortUrlValidator {
 
   public schema = schema.create({
     slug: schema.string.optional(),
-    urlParam: schema.string({ trim: true }),
+    url: schema.string({ trim: true }),
   })
 
   public messages = {}

@@ -22,3 +22,4 @@ import Route from '@ioc:Adonis/Core/Route'
 
 Route.get('/', 'MainController.list')
 Route.post('/', 'MainController.create')
+Route.get('/:slug', 'MainController.get')
